@@ -3,25 +3,23 @@ title: About
 layout: about
 permalink: /about.html
 # include CollectionBuilder info at bottom
-credits: true
+# credits: true
 # Edit the markdown on in this file to describe your collection
 # Look in _includes/feature for options to easily add features to the page
 ---
 
-{% include feature/jumbotron.html objectid="https://cdil.lib.uidaho.edu/images/palouse_sm.jpg" %}
+{% include feature/jumbotron.html objectid="/assets/img/mld-feature.jpg" %} 
 
-{% include feature/nav-menu.html sections="About the Collection;About the About Page" %}
+## About the Meridian History Collection
 
-## About the Collection
+In 2021, care of the Meridian History Collection transferred from the former Meridian Historical Society to the Meridian Library District. The materials are now part of our collection and are located at Meridian City Hall.
 
-This site is generated using [CollectionBuilder-GH](https://collectionbuilding.github.io/gh/), a project to create a free and simple digital collection using [GitHub Pages](https://pages.github.com/) from: 
+Meridian Library District is working to digitize Meridian historical collections in an effort to preserve, document, and make available the history and culture of the area. 
 
-- a CSV of collection metadata
-- a folder of JPG images or PDF documents
+Initial digitization work began in 2022 and was made possible by a SHARP Operations Grant through the [Idaho Humanities Council](https://www.idahohumanities.org/){:target="_blank" rel="noopener"}. Funding for this grant has been provided by the National Endowment for the Humanities (NEH) as part of the American Rescue Plan. 
 
-The template repository features four objects from the University of Idaho Library's [Digital Collections](https://www.lib.uidaho.edu/digital). 
+### Research and Donations
 
-For full details of creating your own collection site, visit [CollectionBuilder Documentation](https://collectionbuilder.github.io/cb-docs/)!
+Please contact [history@mld.org](mailto:history@mld.org){:target="_blank" rel="noopener"} with your research or donation questions. You may also leave a voicemail message at 208.888.4451 ext. 1023 and we will return your call.
 
-<!-- IMPORTANT!!! DELETE this comment and the include below when you are finished editing this page for your collection. The include below introduces about page features. They will show up on your collection's about page until you delete it.  -->
-{% include cb/about_the_about.md %} 
+&nbsp;  
