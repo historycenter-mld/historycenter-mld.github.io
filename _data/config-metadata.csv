@@ -5,9 +5,8 @@ creator,Creator,
 date_range,Date Range,,,
 description,Description,
 subject,Subjects,true
+material_type,Material Types,
 location,Location
 source,Source
-identifier,Source Identifier,,
-material_type,Material Type,
 rights,Rights,
 rightsstatement,Rights Statement,,true
