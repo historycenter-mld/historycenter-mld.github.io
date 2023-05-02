@@ -2,28 +2,23 @@
 # Default home page with boxes providing collection stats
 layout: page
 ---
-{%- assign items = site.data[site.metadata] -%}
-<div class="row">
-  <div class="col-md-8">
+{%- assign items = site.data[site.metadata] | where_exp: 'item','item.objectid' -%}
 
-    {% include index/description.html %}
-    {% include index/carousel.html title="Sample Items" height="300" %}
-  
-  </div>
-  <div class="col-md-4">  
-
-    {% include index/time.html %}
-
-    {% include index/featured-terms.html field="subject" title="Top Subjects" btn-color="primary" %}
-
-    {% include index/featured-terms.html field="location" title="Locations" btn-color="outline-secondary" %}
-
-    {% include index/objects.html %}
-
-  </div>
-  <div class="col-md-12">
-
-    {% include index/data-download.html %}
-
-  </div>
+<div class="col-md-12">
+  {% include index/description.html %}
 </div>
+<div class="container">
+  <div class="row">
+    {% for coll in site.data.meridian %}
+    <div class="col-12 col-md-4 mb-4 d-flex align-items-stretch">
+      <div class="card">
+        <a href="{{coll.collection_link}}" target="_blank"><img src="/objects/{{coll.filename}}"
+            class="card-img-top" alt="{{coll.title}} photograph"></a>
+        <div class="card-body">
+          <h5 class="card-title"><a href="{{coll.collection_link}}" target="_blank">{{coll.title}}</a></h5>
+          <p class="card-text">{{coll.description}}</p>
+        </div>
+      </div>
+    </div>
+    {% endfor  %}
+  </div>
